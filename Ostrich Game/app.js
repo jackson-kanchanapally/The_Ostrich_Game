@@ -29,7 +29,6 @@ function jump(){
     setTimeout(()=>{
         chara.classList.remove('animate')
     },500)
-
 }
 }
 const check=setInterval(()=>{
@@ -38,11 +37,14 @@ const check=setInterval(()=>{
     if(obl<90&&obl>0&&charb<=5)
     {
         chara.style.backgroundImage="url('images/ostp.png')"
+        ob.style.animation='none'
+        ob.classList.remove('obanime')
         ob.style.display='none'
         mount.style.animation='none'
         cloud.style.animation='none'
         cloud2.style.animation='none'
         gameover.classList.add('reload')
+        chara.classList.remove('animate')
         end=false
         finalscore=s
         gameover.addEventListener('click',()=>{
@@ -66,7 +68,6 @@ const check=setInterval(()=>{
     {
         ob.style.animation='ob 1.8s infinite linear'
         animate.style.animation='jump 800ms'
-        console.log(s)
         
     }
     if(s>=1000 && s<=2000){

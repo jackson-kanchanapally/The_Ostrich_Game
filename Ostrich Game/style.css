@@ -135,7 +135,7 @@ line-height: 35px;
 font-size: 20px;
 }
 .animate{
-    animation: jump 850ms;
+    animation: jump 950ms;
 }
 @keyframes jump{
     0%{bottom:0px}
@@ -144,13 +144,7 @@ font-size: 20px;
     85%{bottom:25px}
     100%{bottom:0px}
 }
-/* .gam{
-    position: absolute;
-    text-align: center;
-    bottom:75px;
-    font-size: 25px;
-    left:40%
-} */
+
 .reload{
     position: absolute;
     background-image: url('images/reload.png');
@@ -195,7 +189,6 @@ font-size: 20px;
     width:40px;
     bottom:3px;
     right: 0px;
-    /* animation: ob 2s infinite linear; */
 }
 .obanime{
     animation: ob 2s infinite linear;
