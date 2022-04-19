@@ -37,7 +37,7 @@ const check=setInterval(()=>{
     const obl=parseInt(window.getComputedStyle(ob).getPropertyValue('left'))
     if(obl<90&&obl>0&&charb<=5)
     {
-        chara.style.backgroundImage="url('ostp.png')"
+        chara.style.backgroundImage="url('images/ostp.png')"
         ob.style.display='none'
         mount.style.animation='none'
         cloud.style.animation='none'
