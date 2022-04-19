@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Montserrat:wght@200&family=Orbitron&family=Quicksand&family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: rgb(46, 46, 46);
+}
+.container{
+    margin:auto;
+    height: 25vh;
+    /* width:600px; */
+    width:38%;
+    margin-top: 10%;
+    border: 1px solid black;
+    position: relative;
+    background-color: #bce2f1;
+}
+
+/* .cover{
+    margin:auto;
+    height: 50vh;
+    width:600px;
+    margin-top: 8%;
+    border: 1px solid black;
+    position: relative;
+    background-image: url('enter.png');
+    background-size: 100% 100%;
+} */
+.enter{
+    position: absolute;
+    bottom:90px;
+    left:40px;
+    border-radius: 8px;
+    line-height: 35px;
+    width:100px;
+}
+.land{
+    background-image: url('land.png');
+    background-size: 100% 100%;
+    width:100%;
+    height:10%;
+    position: absolute;
+    bottom: 0;
+}
+.cload
+{
+    background-image: url('cloud.png');
+    background-size: 100% 100%;
+    height: 45px;
+    width:70px;
+    top:25px;
+    position: absolute;
+    /* animation:cload 5s infinite linear; */
+}
+.cloadanime{
+    animation:cload 5s infinite linear;
+}
+.cloud2{
+    background-image: url('cloud.png');
+    background-size: 100% 100%;
+    height: 45px;
+    width:70px;
+    top:25px;
+    position: absolute;
+    /* animation:cload 5.5s infinite linear; */
+}
+.cloudanime{
+    animation:cload 5.5s infinite linear;
+}
+@keyframes cload{
+    0%{left:600px}
+    100%{left:-50px}
+}
+.mount{
+    background-image: url('mount.png');
+    background-size: 100% 100%;
+    /* height:200px;
+    width:150px; */
+    height: 100%;
+    width: 26%;
+    right:0;
+    bottom: 2px;
+    position: absolute;
+    /* animation:mount 4s infinite linear; */
+}
+.mountanime{
+    animation:mount 8s infinite linear;
+}
+@keyframes mount{
+    0%{left:600px}
+    100%{left:-150px}
+}
+
+.chara{
+    /* background-color: red; */
+    background-image: url('ostri.png');
+    background-size: 100% 100%;
+    height:90px;
+    width:90px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 5px;
+    
+}
+.charaanime{
+    background-image: url('ostra-unscreen.gif');
+    background-size: 100% 100%;
+    height:90px;
+    width:90px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 5px;
+}
+.bo{
+    position: relative;
+ 
+}
+.startbo{
+    position: absolute;
+    height: 25vh;
+    /* width: 200px; */
+    width: 30.95%;
+    background-color: rgb(46, 46, 46);
+    right: 0;
+    bottom: 2px;
+   
+}
+button{
+    margin-left: 200px;
+    margin-left: 78px;
+margin-top: 38px;
+width:85px;
+line-height: 35px;
+font-size: 20px;
+}
+.animate{
+    animation: jump 850ms;
+}
+@keyframes jump{
+    0%{bottom:0px}
+    30%{bottom:50px}
+    70%{bottom:48px}
+    85%{bottom:25px}
+    100%{bottom:0px}
+}
+/* .gam{
+    position: absolute;
+    text-align: center;
+    bottom:75px;
+    font-size: 25px;
+    left:40%
+} */
+.reload{
+    position: absolute;
+    background-image: url('reload.png');
+    background-size: 100% 100%;
+    height: 150px;
+    width: 150px;
+    bottom:15px;
+    left:35%
+}
+.score{
+    color: whitesmoke;
+    font-size: 25px;
+    height: 25vh;
+    /* width: 200px; */
+    width: 30.95%;
+    position: absolute;
+    /* left: 17.4%; */
+    bottom: 2px;
+    background-color: rgb(46, 46, 46);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    font-family: 'Orbitron', sans-serif;
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+#score{
+    position: absolute;
+    top:30%;
+    left:20%;
+}
+.ob{
+    position: absolute;
+    /* background-color: blue; */
+    background-image: url('cactus.png');
+    background-size:100% 100%;
+    height: 50px;
+    width:40px;
+    bottom:3px;
+    right: 0px;
+    /* animation: ob 2s infinite linear; */
+}
+.obanime{
+    animation: ob 2s infinite linear;
+}
+@keyframes ob{
+    0%{left:600px;}
+    100%{left:-10px;}
+}
