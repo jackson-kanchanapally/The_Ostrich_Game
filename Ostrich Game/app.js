@@ -15,6 +15,8 @@ const enter=document.querySelector('.enter')
 const animate=document.querySelector('.animate')
 const gameover=document.querySelector('.gam')
 const reload=document.querySelector('.reload')
+const sound=new Audio('beep_1.mp3')
+const game=new Audio('game_over.mp3')
 let s=0
 document.addEventListener('keydown',()=>{
     chara.classList.add('charaanime')
@@ -26,6 +28,7 @@ function jump(){
     if(chara.classList!='animate')
     {
     chara.classList.add('animate')
+    sound.play()
     setTimeout(()=>{
         chara.classList.remove('animate')
     },500)
@@ -34,7 +37,7 @@ function jump(){
 const check=setInterval(()=>{
     const charb=parseInt(window.getComputedStyle(chara).getPropertyValue('bottom'))
     const obl=parseInt(window.getComputedStyle(ob).getPropertyValue('left'))
-    if(obl<90&&obl>0&&charb<=5)
+    if(obl<90&&obl>40&&charb<=5)
     {
         chara.style.backgroundImage="url('images/ostp.png')"
         ob.style.animation='none'
@@ -47,13 +50,13 @@ const check=setInterval(()=>{
         chara.classList.remove('animate')
         end=false
         finalscore=s
+        game.play()
         gameover.addEventListener('click',()=>{
             location.reload()
         })
     }
     else{
-       s=parseInt(score++/5)
-
+        s=parseInt(score++/5)
     }
     if(end===true)
     {
