@@ -74,7 +74,7 @@ const check=setInterval(()=>{
         
     }
     if(s>=1000 && s<=2000){
-        con.style.backgroundColor='rgb(46, 46, 46)'
+        con.style.backgroundColor='rgb(48, 48, 48)'
     }
     
 },10)
