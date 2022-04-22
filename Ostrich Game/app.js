@@ -56,7 +56,7 @@ const check=setInterval(()=>{
         })
     }
     else{
-        s=parseInt(score++/5)
+        s=parseInt(score++/8)
     }
     if(end===true)
     {
@@ -73,8 +73,28 @@ const check=setInterval(()=>{
         animate.style.animation='jump 800ms'
         
     }
-    if(s>=1000 && s<=2000){
+    if(s>=1000){
         con.style.backgroundColor='rgb(48, 48, 48)'
+    }
+    if(s>=1200)
+    {
+        ob.style.animation='ob 1.4s infinite linear'
+        animate.style.animation='jump 800ms'
+    }
+    if(s>=2000)
+    {
+        ob.style.animation='ob 1.1s infinite linear'
+        animate.style.animation='jump 800ms'
+    }
+    if(s>=2800)
+    {
+        ob.style.animation='ob 0.9s infinite linear'
+        animate.style.animation='jump 700ms'
+    }
+    if(s>=3800)
+    {
+        ob.style.animation='ob 0.5s infinite linear'
+        animate.style.animation='jump 600ms'
     }
     
 },10)
